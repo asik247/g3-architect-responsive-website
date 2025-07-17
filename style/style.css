@@ -1,0 +1,134 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* work sans font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Share style-display-flex */
+.display-flex{
+  display: flex;
+}
+/* bck color header ar janno */
+.bck-gray{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+/* color gray dark 0.3 */
+.tex-gray{
+  color:#727272 ;
+}
+.btn_pimary{
+  background-color: #FF900E;
+  padding: 20px 45px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: 600px;
+}
+/* Share style-display-flex */
+
+
+
+
+
+
+/* nav code start here */
+.navbar{
+  justify-content: space-between;
+  gap: 200px;
+  align-items: center;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link{
+  text-decoration: none;
+  font-weight: 500px;
+}
+.navbar, .banner{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.brand{
+  font-size: 3rem;
+}
+/* banner contened */
+.banner_contend{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.banner_title{
+  font-weight: 700px;
+  font-size: 4rem;
+}
+.banner img{
+  width: 100%;
+}
+
+/* Fratures section 01 */
+.features_Section{
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.25rem;
+}
+.squire_img{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+}
+.fratures_title{
+  margin-left: 4rem;
+  /* border: 1px solid black; */
+  padding: 1.25rem;
+}
+.fratures_title h1{
+  font-size: 2.25rem;
+  color: gray;
+}
+#features{
+  color: #FF900E;
+}
+#of-our{
+  font-weight: 800px;
+  color: black;
+
+}
+
+
+
+/* small device phone */
+@media screen and (max-width:576px) {
+  .navbar ,.nav-links ,.features_Section{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .squire_img{
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .fratures_title{
+    padding: 0;
+  }
+ 
+}
+/* ipad  */
+@media screen and (min-width:576px) and (max-width:992px) {
+  .features_Section{
+    flex-direction: column;
+  }
+  
+}
